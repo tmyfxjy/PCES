@@ -61,18 +61,46 @@
                     <li class="tag">学富五车</li>
                     <li class="tag">学富五车</li>
                     <li class="tag">儒雅随和</li>
-                    <li class="tag"><a href="javascript:opentag()"><i class="fa fa-plus"></i></a></li>
+                    <!-- Button trigger modal -->
+                    <li class="tag" data-toggle="modal" data-target="#staticBackdrop">
+                        <i class="fa fa-plus"></i>
+                    </li>
                 </ul>
-                <section id="container">
-                    <div class="box">
-                        <p>常规配置</p>
-                        <div class="button-box" id="button-box-3">
-                            <button>标题 + 内容</button>
-                            <button>标题 + 内容 + 宽度</button>
-                            <button>内容区域背景色</button>
+
+                <!-- Tag Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">选择标签</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="all-tags">
+                                    <p>所有标签</p>
+                                    <ul class="tag-box" id="all-tags">
+                                        <li class="tag">儒雅随和 <i class="fa fa-plus"></i></li>
+                                        <li class="tag">风趣幽默 <i class="fa fa-plus"></i></li>
+                                        <li class="tag">严肃刻板 <i class="fa fa-plus"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="choose-tags">
+                                    <p>我选择的标签</p>
+                                    <ul class="tag-box" id="my-tags">
+                                        <li class="tag">儒雅随和</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                <button type="button" class="btn btn-primary">完成</button>
+                            </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-5">
@@ -183,7 +211,6 @@
 <!-- Javascript -->
 <script src="../js/jquery-3.4.1.js"></script>
 <script src="../js/bootstrap.js"></script>
-<script src="../js/MiniDialog.min.js"></script>
 <script src="../js/tag.js"></script>
 </body>
 </html>

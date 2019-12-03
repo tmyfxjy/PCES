@@ -23,7 +23,7 @@
 }
 
 .tag-box li {
-    padding: 4px 6px;
+    padding: 4px 8px;
     float: left;
     display: inline-block;
 }
@@ -32,7 +32,7 @@
     background: #48cd64;
     color: #fff;
     border-radius: 4px;
-    margin: 4px 3px;
+    margin: 4px 7px;
     position: relative;
 }
 
@@ -44,6 +44,13 @@
     color: #28b76b;
 }
 
+.modal-body .tag-box{
+    margin-bottom: 10px;
+}
+
+.modal-body p{
+    margin-bottom: 0;
+}
 
 
 /** class comment css */
